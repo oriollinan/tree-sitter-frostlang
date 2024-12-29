@@ -1,0 +1,35 @@
+{
+  "grammars": [
+    {
+      "name": "frostlang",
+      "camelcase": "FrostLang",
+      "scope": "source.frostlang",
+      "file-types": [
+        ".ff"
+      ],
+      "injection-regex": "^frostlang$"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "FrostLang grammar for tree-sitter",
+    "authors": [
+      {
+        "name": "Oriol Linan",
+        "email": "oriol.linan@epitech.eu"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/oriollinan/tree-sitter-frostlang.git"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true
+  }
+}
