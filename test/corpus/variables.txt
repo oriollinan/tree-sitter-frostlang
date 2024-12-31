@@ -1,0 +1,49 @@
+==================
+Constants and Arithmetic
+==================
+
+num: int32 = MAX_INT_32 + 5
+
+---
+
+(source_file
+  (variable_definition
+    (identifier)
+    (primitive_type)
+    (binary_expression
+      (identifier)
+      (number)
+    )
+  )
+)
+
+==================
+Defined Variable
+==================
+
+num: int32
+
+---
+
+(source_file
+  (variable_definition
+    (identifier)
+    (primitive_type)
+  )
+)
+
+==================
+Initialized Variable
+==================
+
+num: int32 = 0
+
+---
+
+(source_file
+  (variable_definition
+    (identifier)
+    (primitive_type)
+    (number)
+  )
+)

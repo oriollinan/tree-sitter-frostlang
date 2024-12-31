@@ -1,0 +1,70 @@
+==================
+Function Definition
+==================
+
+request : (Vector2i) -> Response = v => {
+    vector: Vector2i = { x = 5, y = 10 }
+    message: string = "coords are ({vector.x}, {vector.y})"
+    first: byte = message.1
+    { data = message }
+}
+
+---
+
+(source_file
+  (function_definition
+    (identifier)
+    (function_type
+      (custom_type
+        (identifier)
+      )
+      (custom_type
+        (identifier)
+      )
+    )
+    (parameter_list
+      (identifier)
+    )
+    (block
+      (variable_definition
+        (identifier)
+        (custom_type
+          (identifier)
+        )
+        (deep_instance
+          (field_assignment
+            (identifier)
+            (number)
+          )
+          (field_assignment
+            (identifier)
+            (number)
+          )
+        )
+      )
+      (variable_definition
+        (identifier)
+        (custom_type
+          (identifier)
+        )
+        (string)
+      )
+      (variable_definition
+        (identifier)
+        (custom_type
+          (identifier)
+        )
+        (array_access
+          (identifier)
+          (number)
+        )
+      )
+      (deep_instance
+        (field_assignment
+          (identifier)
+          (identifier)
+        )
+      )
+    )
+  )
+)

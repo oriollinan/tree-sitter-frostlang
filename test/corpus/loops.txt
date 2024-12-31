@@ -1,0 +1,142 @@
+==================
+Basic For Loop
+==================
+
+main: () -> void ==> {
+    from 0 to 10 by 1 |i: int| {
+        print("{i}\n")
+    }
+}
+
+---
+
+(source_file
+  (function_definition
+    (identifier)
+    (function_type
+      (primitive_type)
+    )
+    (block
+      (for_statement
+        (number)
+        (number)
+        (number)
+        (capture_group
+          (identifier)
+          (primitive_type)
+        )
+        (block
+          (function_call
+            (identifier)
+            (string)
+          )
+        )
+      )
+    )
+  )
+)
+
+==================
+Advanced For Loop
+==================
+
+main: () -> void ==> {
+    from num to 0 by -1 |j: long| {
+        if j is 42 {
+             next
+        }
+        if j is 8 {
+             stop
+        }
+        print("long => {j}")
+    }
+}
+
+---
+
+(source_file
+  (function_definition
+    (identifier)
+    (function_type
+      (primitive_type)
+    )
+    (block
+      (for_statement
+        (identifier)
+        (number)
+        (pre_unary_expression
+          (number)
+        )
+        (capture_group
+          (identifier)
+          (custom_type
+            (identifier)
+          )
+        )
+        (block
+          (if_statement
+            (binary_expression
+              (identifier)
+              (number)
+            )
+            (block
+              (continue_statement)
+            )
+          )
+          (if_statement
+            (binary_expression
+              (identifier)
+              (number)
+            )
+            (block
+              (break_statement)
+            )
+          )
+          (function_call
+            (identifier)
+            (string)
+          )
+        )
+      )
+    )
+  )
+)
+
+==================
+Basic While Loop
+==================
+
+main: () -> void ==> {
+    loop z > 10 {
+        z = z - 1
+    }
+}
+
+---
+
+(source_file
+  (function_definition
+    (identifier)
+    (function_type
+      (primitive_type)
+    )
+    (block
+      (while_statement
+        (binary_expression
+          (identifier)
+          (number)
+        )
+        (block
+          (variable_assignment
+            (identifier)
+            (binary_expression
+              (identifier)
+              (number)
+            )
+          )
+        )
+      )
+    )
+  )
+)
+

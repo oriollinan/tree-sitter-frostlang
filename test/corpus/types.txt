@@ -1,0 +1,74 @@
+==================
+Struct Definition
+==================
+
+Vector2 :: struct {
+    x -> int
+    y -> int
+}
+
+---
+
+(source_file
+  (type_definition
+    (identifier)
+    (struct_definition
+      (field_definition
+        (identifier)
+        (primitive_type)
+      )
+      (field_definition
+        (identifier)
+        (primitive_type)
+      )
+    )
+  )
+)
+
+==================
+Union Definition
+==================
+
+Response :: union {
+    data -> *char
+    error -> int
+}
+
+---
+
+(source_file
+  (type_definition
+    (identifier)
+    (union_definition
+      (field_definition
+        (identifier)
+        (pointer_type
+          (primitive_type)
+        )
+      )
+      (field_definition
+        (identifier)
+        (primitive_type)
+      )
+    )
+  )
+)
+
+==================
+Alias Definition
+==================
+
+Vector2i :: Vector2
+
+---
+
+(source_file
+  (type_definition
+    (identifier)
+    (alias_definition
+      (custom_type
+        (identifier)
+      )
+    )
+  )
+)

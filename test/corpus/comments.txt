@@ -1,0 +1,32 @@
+==================
+Comments
+==================
+
+% This is a line comment
+Vector2 :: struct {
+    x -> int
+    y -> int
+}
+%%
+This is a block comment
+%%
+
+---
+
+(source_file
+  (line_comment)
+  (type_definition
+    (identifier)
+    (struct_definition
+      (field_definition
+        (identifier)
+        (primitive_type)
+      )
+      (field_definition
+        (identifier)
+        (primitive_type)
+      )
+    )
+  )
+  (block_comment)
+)
