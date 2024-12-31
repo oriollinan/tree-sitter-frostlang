@@ -4,10 +4,9 @@
       "name": "frostlang",
       "camelcase": "FrostLang",
       "scope": "source.frostlang",
-      "file-types": [
-        ".ff"
-      ],
-      "injection-regex": "^frostlang$"
+      "file-types": ["ff"],
+      "injection-regex": "^frostlang$",
+      "highlights": "queries/highlights.scm"
     }
   ],
   "metadata": {
@@ -33,3 +32,4 @@
     "swift": true
   }
 }
+
